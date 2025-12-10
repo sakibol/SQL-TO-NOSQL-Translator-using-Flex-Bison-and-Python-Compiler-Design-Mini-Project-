@@ -1,0 +1,59 @@
+db.students.insertOne({
+  student_id: 100,
+  name: "Md.Sakibol Hasan Sohan",
+  email: "sohan2305101821@diu.edu.bd",
+  gender: "Male"
+})
+
+db.students.insertOne({
+  student_id: 101,
+  name: "Mir Md Ziad",
+  email: "ziad2305101935@diu.edu.bd",
+  gender: "Male"
+  age: 23
+})
+
+db.students.insertOne({
+  student_id: 102,
+  name: "Jihad Hossan Khan",
+  email: "khan2305101664@diu.edu.bd",
+  gender: "Male",
+  age: 27
+})
+
+
+db.students.insertOne({
+  student_id: 103,
+  name: "Dipankar Saha",
+  email: "saha2305101862@diu.edu.bd",
+  gender: "Male",
+  age: 24
+})
+
+db.students.insertOne({
+  student_id: 104,
+  name: "Rafa Tasnia",
+  email: "tasnia2305101118@diu.edu.bd",
+  gender: "Female",
+  age : 21
+})
+
+
+db.teachers.insertOne({
+  teacher_id: 201,
+  name: "Tamanna Sultana",
+  email: "sultana.cse@diu.edu.bd",
+  gender: "Female"
+})
+
+db.courses.insertOne({
+  course_id: 301,
+  course_name: "Compiler Design",
+  credit: 3
+})
+
+//link student to course
+db.courses.updateOne(
+  { course_id: 300 },
+  { $set: { students: [100, 101, 103] } }
+)
