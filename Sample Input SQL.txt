@@ -1,0 +1,10 @@
+1.SELECT * FROM courses WHERE course_name='Database Systems' AND credit=3;
+
+2.SELECT * FROM students WHERE gender='Male' AND student_id=102;
+3.SELECT * FROM students WHERE name='Mir Md Ziad' AND gender='Male';
+
+4.SELECT * FROM students WHERE gender='Female';
+
+5.SELECT * FROM students WHERE student_id >= 102;
+
+6.SELECT * FROM teachers WHERE teacher_id=200;
